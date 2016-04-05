@@ -1,0 +1,22 @@
+{
+  "name": "surfspot-proto",
+  "version": "1.0.0",
+  "description": "A web application that finds the most suitable spot for surfing.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clothesline0909/surfspot-proto.git"
+  },
+  "keywords": [
+    "surfing"
+  ],
+  "author": "Brett Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clothesline0909/surfspot-proto/issues"
+  },
+  "homepage": "https://github.com/clothesline0909/surfspot-proto#readme"
+}

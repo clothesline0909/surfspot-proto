@@ -2,14 +2,20 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<base href="/">
 		<script src="//oss.maxcdn.com/angularjs/1.5.0/angular.min.js"></script>
 		<script src="//oss.maxcdn.com/angularjs/1.5.0/angular-route.min.js"></script>
+		<script src="//oss.maxcdn.com/angularjs/1.5.0/angular-mocks.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css"></script>
 	</head>
 	<body ng-app="SurfSpot">
 		<ng-view></ng-view>
 	</body>
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 	<script src="config.js"></script>
 	<script src="controllers/searchController.js"></script>
 	<script src="controllers/resultsController.js"></script>
+	<script src="directives/ssSlider.js"></script>
 </html>

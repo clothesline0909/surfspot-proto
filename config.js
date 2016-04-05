@@ -1,4 +1,4 @@
-angular.module('SurfSpot', ['ngRoute'])
+angular.module('SurfSpot', ['ngRoute', 'ngMock'])
 .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
 	$routeProvider.when('/', {
