@@ -3,7 +3,7 @@ angular.module('SurfSpot')
     return {
         restrict: 'E',
         scope: {},
-        templateUrl: 'templates/directives/ss-slider.html',
+        templateUrl: 'directives/templates/ssSlider.html',
         replace: true,
         link: function (scope, elem, attrs, controller) {
             scope.position = Number(attrs.ssPosition);

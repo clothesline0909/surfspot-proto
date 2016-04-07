@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/clothesline0909/surfspot-proto/issues"
   },
-  "homepage": "https://github.com/clothesline0909/surfspot-proto#readme"
+  "homepage": "https://github.com/clothesline0909/surfspot-proto#readme",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-mocks": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "jasmine-core": "^2.4.1",
+    "jquery": "^2.2.3",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-jasmine": "^0.3.8"
+  }
 }

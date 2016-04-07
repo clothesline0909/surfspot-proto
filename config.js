@@ -1,7 +1,7 @@
 angular.module('SurfSpot', ['ngRoute', 'ngMockE2E'])
 .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
-	$routeProvider.when('/', {
+	$routeProvider.when('/search', {
 		templateUrl: 'views/search.html',
 		controller: 'SearchController'
 	})
