@@ -22,3 +22,9 @@
     background-color: red;
     cursor: pointer;
 }
+
+.slider-input {
+    position: absolute;
+    left: 0px;
+    top: 170px;
+}

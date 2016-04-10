@@ -19,11 +19,12 @@ module.exports = function(config) {
       'node_modules/angular/angular.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-route/angular-route.js',
-      'config.js',
-      'controllers/*.js',
-      'directives/*.js',
+      'app/config.js',
+      'app/controllers/*.js',
+      'app/directives/*.js',
       'spec/controllers/*Spec.js',
-      'spec/directives/*Spec.js'
+      'spec/directives/*Spec.js',
+      'app/templates/directives/*.html'
     ],
 
 
@@ -35,7 +36,11 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'templates/**/*.html': ['ng-html2js']
+      'app/templates/directives/*.html': ['ng-html2js']
+    },
+
+    ngHtml2JsPreprocessor: {
+      stripPrefix: 'app/'
     },
 
 
