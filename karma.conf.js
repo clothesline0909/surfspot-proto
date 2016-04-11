@@ -24,7 +24,8 @@ module.exports = function(config) {
       'app/directives/*.js',
       'spec/controllers/*Spec.js',
       'spec/directives/*Spec.js',
-      'app/templates/directives/*.html'
+      'app/templates/directives/*.html',
+      'app/style.css'
     ],
 
 

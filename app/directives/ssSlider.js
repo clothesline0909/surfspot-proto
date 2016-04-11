@@ -8,21 +8,20 @@ angular.module('SurfSpot')
         templateUrl: 'templates/directives/ssSlider.html',
         replace: true,
         link: function(scope, elem, attrs) {
-
+            scope.clicked = false;
             renderSlider(elem, scope.position);
 
             var tab = elem.find('.slider-tab');
 
-            var clicked = false;
             var startPointX;
 
             tab.bind('mousedown', function (event) {
-                clicked = true;
+                scope.clicked = true;
                 startPointX = event.clientX;
             });
 
             jQuery(document).bind('mouseup', function () {
-                clicked = false;
+                scope.clicked = false;
             });
 
             tab.bind('mousemove', function (event) {
@@ -41,7 +40,6 @@ function renderSlider(slider, position) {
     var tab = slider.find('.slider-tab');
     var tabWidth = tab.width();
     var parentWidth = slider.width();
-    var slideWidth = parentWidth - tabWidth;
     var newLeft = (parentWidth - tabWidth) * position / 100;
     tab.css('left', newLeft + "px");
 }
