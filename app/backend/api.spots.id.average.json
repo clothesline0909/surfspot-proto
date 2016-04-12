@@ -1,7 +1,6 @@
 [
     {
         "id": "1",
-        "name": "Bells Beach",
         "swell": {
             "primary": {
                 "amplitude": "1.2",
@@ -13,15 +12,16 @@
         },
         "environment": {
             "state": "cloudy",
-            "airtemp": "16.1",
-            "watertemp": "17.6",
+            "airtemp": "",
+            "watertemp": "",
             "wind": {
-                "speed": "4.9",
+                "speed": "6.7",
                 "direction": {
-                    "degrees": "222",
+                    "degrees": "345",
                     "shore": "onshore"
                 }
-            },
+            }
         }
-    }
+    },
+
 ]
