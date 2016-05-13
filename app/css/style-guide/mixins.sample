@@ -1,0 +1,52 @@
+@define-mixin clearfix
+{
+    &:before,
+    &:after
+    {
+        content: " ";
+        display: table;
+    }
+
+    &:after
+    {
+        clear: both;
+    }
+}
+
+/* Creates a wrapper for a series of columns */
+@define-mixin make-row $gutter
+{
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    @mixin clearfix;
+}
+
+/* Placeholder text */
+@define-mixin placeholder $color
+{
+    /* Firefox */
+    &::-moz-placeholder
+    {
+        color: $color;
+        opacity: 1; /* Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526 */
+    }
+
+    /* Internet Explorer 10+ */
+    &:-ms-input-placeholder
+    {
+        color: $color;
+    }
+
+    /* Safari and Chrome */
+    &::-webkit-input-placeholder
+    {
+        color: $color;
+    }
+}
+
+@define-placeholder text-overflow
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

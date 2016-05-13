@@ -9,6 +9,7 @@ angular.module('SurfSpot')
         replace: true,
         link: function(scope, slider, attrs) {
             scope.clicked = false;
+            scope.roundedPosition = scope.position;
 
             scope.renderSlider = function () {
                 var tab = slider.find('.slider-tab');
@@ -37,26 +38,51 @@ angular.module('SurfSpot')
 
             var startPointX;
 
-            tab.bind('mousedown', function (event) {
+            tab.on('mousedown', function (event) {
                 scope.clicked = true;
                 startPointX = event.clientX;
                 scope.$digest();
             });
 
-            jQuery(document).bind('mouseup', function () {
-                scope.clicked = false;
+            tab.on('touchstart', function (event) {
+                scope.clicked = true;
+                startPointX = event.clientX;
                 scope.$digest();
             });
 
-            jQuery(document).bind('mousemove', function (event) {
+            jQuery(document).on('mousemove', function (event) {
                 if (scope.clicked) {
                     var distanceX = event.clientX - startPointX;
                     scope.position = scope.getNewPosition(distanceX);
+                    scope.roundedPosition = Math.floor(scope.position + 0.5);
                     scope.renderSlider();
                     startPointX = event.clientX;
                     scope.$digest();
                 }
             });
+
+            jQuery(document).on('touchmove', function (event) {
+                if (scope.clicked) {
+                    var distanceX = event.clientX - startPointX;
+                    scope.position = scope.getNewPosition(distanceX);
+                    scope.roundedPosition = Math.floor(scope.position + 0.5);
+                    scope.renderSlider();
+                    startPointX = event.clientX;
+                    scope.$digest();
+                }
+            });
+
+            jQuery(document).on('mouseup', function () {
+                scope.clicked = false;
+                scope.$digest();
+            });
+
+            jQuery(document).on('touchend', function () {
+                scope.clicked = false;
+                scope.$digest();
+            });
+
+            
         }
     }
 });

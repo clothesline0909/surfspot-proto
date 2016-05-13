@@ -1,0 +1,48 @@
+h1, .h1
+{
+    font-size: $font-size-mobile-h1;
+    font-weight: $font-weight-light;
+    letter-spacing: 0.005em;
+    line-height: $line-height-mobile-h1;
+    margin: 0;
+}
+
+h2, .h2
+{
+    font-size: $font-size-mobile-h2;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-mobile-h2;
+    margin: 0;
+}
+
+.dollar-amount
+{
+    color: $brand-color-light;
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 36px;
+
+    &:before
+    {
+        content: '$';
+        font-size: 0.5em;
+        position: relative;
+        top: -0.5em;
+        vertical-align: baseline;
+    }
+}
+
+@media(min-width: $screen-sm-min)
+{
+    h1, .h1
+    {
+        font-size: $font-size-h1;
+        line-height: $line-height-h1;
+    }
+
+    h2, .h2
+    {
+        font-size: $font-size-h2;
+        line-height: $line-height-h2;
+    }
+}

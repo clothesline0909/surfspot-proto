@@ -9,6 +9,10 @@ angular.module('SurfSpot', ['ngRoute', 'ngMockE2E'])
 		templateUrl: 'views/results.html',
 		controller: 'ResultsController'
 	})
+	.when('/user/create', {
+		templateUrl: 'views/user/create.html',
+		controller: 'CreateUserController'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});

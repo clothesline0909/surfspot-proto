@@ -1,0 +1,106 @@
+/*-- Colours ----------------------------------------------------------------*/
+$iec-green: #21E68D;
+$iec-green-dark: #3DC680;
+$iec-black: #292929;
+$iec-cream: #EEEEEC;
+$iec-cream-dark: #C6C6C4;
+
+$iec-blue: #20C8E5;
+$iec-yellow: #F7EA20;
+$iec-red: #F73E20;
+
+$column-width: 30px;
+$gutter-width: 10px;
+$baseline: 8px;
+
+
+/*-- Scaffolding ------------------------------------------------------------*/
+$font-path: ../../fonts;
+
+$link-color: $brand-color-light;
+$link-hover-color: $brand-color-dark;
+$link-hover-decoration: underline;
+
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-small: 2px;
+
+/*-- Media Queries Breakpoints ----------------------------------------------*/
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+
+$screen-xs-max: calc($screen-sm-min - 1px);
+$screen-sm-max: calc($screen-md-min - 1px);
+$screen-md-max: calc($screen-lg-min - 1px);
+
+/*-- Typography -------------------------------------------------------------*/
+$font-family-sans-serif: 'Larsseit', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$font-family-monospace: "Lucida Console", Monaco, monospace;
+
+$font-size-base: 16px;
+$font-size-h1: 24px;
+$font-size-h2: 12px;
+
+$font-size-mobile-base: 12px;
+$font-size-mobile-h1: 20px;
+$font-size-mobile-h2: 12px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$line-height-base: 1.5;
+$line-height-h1: 1.75;
+$line-height-h2: 2;
+
+$line-height-mobile-base: 1.333333333;
+$line-height-mobile-h1: 1.6;
+$line-height-mobile-h2: 2;
+
+$line-height-computed: calc($font-size-base * $line-height-base);
+$line-height-mobile-computed: calc($font-size-mobile-base * $line-height-mobile-base);
+
+/*-- Z-Index Master List ----------------------------------------------------*/
+$zindex-navbar: 1000;
+$zindex-dropdown: 1000;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+$zindex-navbar-fixed: 1030;
+$zindex-modal-background: 1040;
+$zindex-modal: 1050;
+
+
+/*-- Forms ------------------------------------------------------------------*/
+$cursor-disabled: default;
+
+$input-color: $iec-black;
+$input-bg: #FFF;
+$input-bg-disabled: $iec-cream;
+
+$input-dark-color: $iec-black;
+$input-dark-bg: $iec-cream;
+
+$input-darker-color: $iec-black;
+$input-darker-bg: $iec-cream-dark;
+
+$input-border-radius: $border-radius-small;
+
+$input-height-base: 40px;
+$input-padding-horizontal: 10px;
+$input-padding-vertical: calc(($input-height-base - $line-height-computed) / 2);
+
+$input-height-mobile-base: 32px;
+$input-padding-mobile-horizontal: 10px;
+$input-padding-mobile-vertical: calc(($input-height-base - $line-height-computed) / 2);
+
+$button-padding-horizontal: 20px;
+$button-padding-horizontal-mobile: 18px;
+
+$form-group-margin-bottom: 15px;

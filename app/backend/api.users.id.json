@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "first-name": "Brett",
+        "last-name": "Clark",
+        "start-page": "saved-spots",
+        "spots": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+    },
+    {
+        "id": "2",
+        "first-name": "Test",
+        "last-name": "User",
+        "start-page": "saved-spots"
+    }
+]

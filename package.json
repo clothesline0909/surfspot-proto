@@ -4,7 +4,8 @@
   "description": "A web application that finds the most suitable spot for surfing.",
   "main": "config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "angular": "^1.5.3",
     "angular-mocks": "^1.5.3",
     "angular-route": "^1.5.3",
+    "browserify": "^13.0.0",
     "jasmine-core": "^2.4.1",
     "jquery": "^2.2.3",
     "karma": "^0.13.22",
