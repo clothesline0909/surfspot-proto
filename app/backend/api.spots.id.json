@@ -22,17 +22,20 @@
             "secondary": "",
             "tertiary": ""
         },
+        "wind": {
+            "speed": "4.9",
+            "direction": "222",
+            "chill": "15",
+            "gusts": "13"
+        },
         "environment": {
             "state": "cloudy",
-            "airtemp": "16.1",
+            "air": {
+                "temperature": "18"
+                "pressure": "1020",
+            }
             "watertemp": "17.6",
-            "wind": {
-                "speed": "4.9",
-                "direction": {
-                    "degrees": "222",
-                    "shore": "onshore"
-                }
-            },
+            
         }
     }
 ]
